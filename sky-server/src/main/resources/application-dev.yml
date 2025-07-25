@@ -1,0 +1,28 @@
+sky:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    host: ${DB_HOST}
+    port: ${DB_PORT}
+    database: sky_take_out
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+  alioss:
+    endpoint: ${OSS_ENDPOINT}
+    access-key-id: ${OSS_ENDPOINT}
+    access-key-secret: ${OSS_ENDPOINT}
+    bucket-name: ${OSS_BUCKET_NAME}
+  redis:
+    host: ${REDIS_HOST}
+    port: ${REDIS_PORT}
+    password: ${REDIS_PASSWORD}
+    database: ${REDIS_DATABASE}
+  wechat:
+    appid: ${WECHAT_APPID}
+    secret: ${WECHAT_SECRET}
+    mchid: ${WECHAT_MCHID}
+    mchSerialNo: ${WECHAT_MCH_SERIAL_NO}
+    privateKeyFilePath: ${WECHAT_PRIVATE_KEY_PATH}
+    apiV3Key: ${WECHAT_API_V3_KEY}
+    weChatPayCertFilePath: ${WECHAT_CERT_PATH}
+    notifyUrl: ${WECHAT_NOTIFY_URL}
+    refundNotifyUrl: ${WECHAT_REFUND_NOTIFY_URL}

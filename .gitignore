@@ -1,0 +1,23 @@
+# Maven build directory构建目录
+/target/
+
+# IDE files IDE文件
+.idea/
+*.iml
+
+# Java class files Java的类文件
+*.class
+
+# Test files 测试文件
+*Test.java
+**/test/
+
+# Log files 日志文件
+*.log
+
+# Build artifacts 临时编译文件
+*.jar
+*.war
+
+# Other IDE-specific files 其他IDE临时文件
+*.swp
