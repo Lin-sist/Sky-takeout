@@ -1,5 +1,5 @@
-# Maven build directory构建目录
-/target/
+# 忽略所有 target 目录（包括子模块）
+**/target/
 
 # IDE files IDE文件
 .idea/
