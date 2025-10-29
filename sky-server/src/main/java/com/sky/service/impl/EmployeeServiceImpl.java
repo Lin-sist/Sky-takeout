@@ -71,7 +71,7 @@ public class EmployeeServiceImpl implements EmployeeService {
      * @param employeeDTO
      */
     @Override
-    public void save(EmployeeDTO employeeDTO) {
+    public void save(EmployeeDTO employeeDTO) {     //新增员工业务代码
         Employee employee = new Employee();
 
         //对象属性拷贝
@@ -87,12 +87,10 @@ public class EmployeeServiceImpl implements EmployeeService {
         employee.setCreateTime(LocalDateTime.now());
         employee.setUpdateTime(LocalDateTime.now());
 
-//        通过ThreadLocal获取用户信息
-        Long currentId = BaseContext.getCurrentId();
-
         //设置当前记录创建人id和修改人id
-        employee.setCreateUser(currentId);//目前写个假数据，后期修改
-        employee.setUpdateUser(currentId);
+
+        employee.setCreateUser(BaseContext.getCurrentId());     //取出id
+        employee.setUpdateUser(BaseContext.getCurrentId());
 
         employeeMapper.insert(employee);//后续步骤定义
     }
